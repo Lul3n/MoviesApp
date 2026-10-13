@@ -46,7 +46,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="correo electrónico"
+        android:hint="Correo electrónico"
         android:layout_margin="16dp"
         app:boxStrokeColor="@color/primario"
         app:hintTextColor="@color/primario">
@@ -118,6 +118,15 @@
         android:layout_margin="16dp"
         android:text="Registrarme"
         app:backgroundTint="@color/primario" />
+    <TextView
+        android:id="@+id/btn_regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar al inicio"
+        android:textColor="@color/text"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
 
 </LinearLayout>
 </ScrollView>
