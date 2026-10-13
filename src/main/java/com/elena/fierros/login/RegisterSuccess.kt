@@ -16,8 +16,8 @@ class RegisterSuccess : AppCompatActivity(){
         setContentView(R.layout.register)
 
         btnRegresar.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
     }
