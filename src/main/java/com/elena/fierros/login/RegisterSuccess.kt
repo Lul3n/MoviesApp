@@ -1,4 +1,4 @@
 package com.elena.fierros.login
 
-class RegisterPage {
+class RegisterSuccess {
 }
