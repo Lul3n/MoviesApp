@@ -25,6 +25,13 @@
             android:name=".RegisterLogin"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RecoveryPassword"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterSuccess"
+            android:exported="false" />
     </application>
 
 </manifest>
