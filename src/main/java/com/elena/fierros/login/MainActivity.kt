@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btn_registrarse: Button
     lateinit var campo_correo: EditText
     lateinit var campo_contra: EditText
+    lateinit var btnRecuperar: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +32,14 @@ class MainActivity : AppCompatActivity() {
         btn_registrarse = findViewById<Button>(R.id.btn_sign)
         campo_correo = findViewById<EditText>(R.id.campo_correo)
         campo_contra = findViewById<EditText>(R.id.campo_contra)
+        btnRecuperar = findViewById<TextView>(R.id.btn_recovery)
 
-        btn_ingresar.setOnClickListener {
+        btn_registrarse.setOnClickListener {
             val intent = Intent(this, RegisterLogin::class.java)
             startActivity(intent)
         }
 
-        btn_registrarse.setOnClickListener {
+        btn_ingresar.setOnClickListener {
             var user = campo_correo.text.toString()
             var password = campo_contra.text.toString()
 
@@ -46,6 +49,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Incorrect User", Toast.LENGTH_SHORT).show()
             }
 
+        }
+        btnRecuperar.setOnClickListener {
+            val intent = Intent(this, RecoveryPassword::class.java)
+            startActivity(intent)
         }
 
     }

@@ -86,12 +86,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:text="Registrase"
+            android:text="Registrarse"
             android:backgroundTint="@color/primario"
             android:layout_marginHorizontal="7dp"/>
     </LinearLayout>
     <TextView
-        android:id="@+id/btn_password"
+        android:id="@+id/btn_recovery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="¿Olvidaste tu contraseña?"
