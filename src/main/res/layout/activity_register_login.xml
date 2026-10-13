@@ -1,10 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterLogin">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_margin="16dp"
+        app:boxStrokeColor="@color/primario"
+        app:hintTextColor="@color/primario">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="correo electrónico"
+        android:layout_margin="16dp"
+        app:boxStrokeColor="@color/primario"
+        app:hintTextColor="@color/primario">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        app:boxStrokeColor="@color/primario"
+        app:hintTextColor="@color/primario"
+        android:layout_margin="16dp"
+        app:endIconMode="password_toggle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar contraseña"
+        app:boxStrokeColor="@color/primario"
+        app:hintTextColor="@color/primario"
+        android:layout_margin="16dp"
+        app:endIconMode="password_toggle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de nacimiento"
+        android:layout_margin="16dp"
+        app:boxStrokeColor="@color/primario"
+        app:hintTextColor="@color/primario"
+        app:endIconMode="custom"
+        app:endIconDrawable="@android:drawable/ic_menu_my_calendar">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campo_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Registrarme"
+        app:backgroundTint="@color/primario" />
+
+</LinearLayout>
+</ScrollView>
